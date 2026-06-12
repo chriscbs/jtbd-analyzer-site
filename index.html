@@ -318,7 +318,7 @@
     
 
       
-      <div class="bg-grey-800 rounded-xl p-6 mb-10 overflow-hidden relative"
+      <div class="hidden md:block bg-grey-800 rounded-xl p-6 mb-10 overflow-hidden relative"
            x-data="timelineViz()" x-init="$nextTick(() => render())"
            @mouseleave="activeEvent = null">
 
@@ -599,7 +599,7 @@
       </script>
 
       
-      <div class="relative ml-4 hidden md:block">
+      <div class="relative ml-4">
         <div class="absolute left-3 top-3 bottom-3 w-0.5 bg-gradient-to-b from-push-300 via-brand-300 to-pull-300"></div>
         <div class="space-y-1">
           
@@ -612,13 +612,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">5 years ago</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Brian buys Stearns &amp; Foster mattress from uncle at Macy&#39;s after extensive research</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-push-100 text-push-700
                   ">push: needed new mattress for pregnant wife</span>
                 
@@ -637,13 +637,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">Years 1-2</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Enjoys the new mattress</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-brand-50 text-brand-700
                   ">post-switch: initial satisfaction</span>
                 
@@ -660,13 +660,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">Year 3</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Mattress quality deteriorates, becomes &#34;eh&#34;</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-push-100 text-push-700
                   ">push: comfort declining</span>
                 
@@ -683,13 +683,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">Year 4 (1 year before purchase)</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Waking up daily with headaches, neck aches, back aches. Notices sinkage in mattress</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-push-100 text-push-700
                   ">push: physical pain</span>
                 
@@ -706,13 +706,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">Throughout Year 4</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Experiments with flipping, rotating, removing box spring, sleeping without pillows</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-push-100 text-push-700
                   ">push: maintaining workarounds</span>
                 
@@ -729,13 +729,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">Year 4</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Travels 37 weeks for business, sleeps fine in hotel beds, confirming home mattress is the problem</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-push-100 text-push-700
                   ">push: proof the mattress is the issue</span>
                 
@@ -752,13 +752,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">~6 months before purchase</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Wife starts experiencing same problems, admits mattress is uncomfortable</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-push-100 text-push-700
                   ">push: spouse alignment</span>
                 
@@ -777,13 +777,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">June (3 months before purchase)</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Family moves from condo to new house</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-push-100 text-push-700
                   ">push: life change enabling switch</span>
                 
@@ -799,13 +799,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">June-September</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Brian does extensive online research on memory foam mattresses</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-grey-100 text-grey-500">active looking</span>
                 
               </div>
@@ -820,13 +820,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">Multiple nights</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Can&#39;t sleep due to mattress pain, goes downstairs to research mattresses at 2 AM</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-grey-100 text-grey-500">active looking</span>
                 
               </div>
@@ -841,13 +841,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">During research period</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Almost buys memory foam mattress on Groupon but hesitates due to return concerns</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-grey-100 text-grey-500">anxiety: what if i can&#39;t return it</span>
                 
               </div>
@@ -862,13 +862,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">Mid-September, Saturday</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Family trip to Costco for monthly supplies</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-grey-100 text-grey-500">routine shopping</span>
                 
               </div>
@@ -886,13 +886,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">45 minutes into Costco trip</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Takes shortcut to avoid checkout traffic, sees memory foam mattresses</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-brand-50 text-brand-700
                   ">awareness/tipping point</span>
                 
@@ -911,13 +911,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">At mattress display</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Examines mattresses, wife touches sample and approves purchase</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-brand-50 text-brand-700
                   ">tipping point</span>
                 
@@ -936,13 +936,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">Same trip</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Goes back for flatbed cart, loads $699 king-size memory foam mattress</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-brand-50 text-brand-700
                   ">switch</span>
                 
@@ -961,13 +961,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">After purchase</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Sets up both old and new mattresses in bedroom</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-brand-50 text-brand-700
                   ">post-switch</span>
                 
@@ -986,13 +986,13 @@
               </div>
             </div>
             <div class="flex-1 bg-white border border-grey-200 rounded-lg p-4 group-hover:shadow-sm group-hover:border-grey-300 transition-all">
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3">
                 <div class="flex-1">
                   <span class="text-xs font-bold text-grey-800 uppercase tracking-wide">45 days later (interview date)</span>
                   <p class="text-sm text-grey-600 mt-1 leading-relaxed">Still has both mattresses, slept on old one previous night and &#34;woke up feeling great&#34;</p>
                 </div>
                 
-                <span class="flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
+                <span class="self-start sm:flex-shrink-0 inline-block px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider
                   bg-brand-50 text-brand-700
                   ">post-switch: unresolved</span>
                 
@@ -1034,6 +1034,7 @@
       <div class="bg-white border border-grey-200 rounded-xl p-6 mb-8">
 
         
+        <p class="sm:hidden text-[10px] font-bold text-grey-400 uppercase tracking-widest mb-2">Driving Change</p>
         <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
           
           <div class="flex-1 bg-push-100 border border-push-300 rounded-lg p-4">
@@ -1071,13 +1072,14 @@
         </div>
 
         
-        <div class="flex items-center gap-4 py-3">
+        <div class="hidden sm:flex items-center gap-4 py-3">
           <div class="flex-1 h-px bg-grey-200"></div>
           <span class="text-[10px] font-bold text-grey-300 uppercase tracking-widest">driving change vs. resisting change</span>
           <div class="flex-1 h-px bg-grey-200"></div>
         </div>
 
         
+        <p class="sm:hidden text-[10px] font-bold text-grey-400 uppercase tracking-widest mt-5 mb-2">Resisting Change</p>
         <div class="flex flex-col sm:flex-row sm:items-center gap-3 mt-3">
           
           <div class="flex-1 bg-habit-100 border border-habit-300 rounded-lg p-4">
